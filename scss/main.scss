@@ -8,4 +8,145 @@
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .boxForCards {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 920px;
+    .card1 {
+      // display: none;
+      height: 200px;
+      width: 350px;
+      border-radius: 10px 100px 10px 10px;
+      padding: 50px;
+      background-color: hsl(228, 56%, 26%);
+      img {
+        margin-bottom: 30px;
+      }
+      .buttonsBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 175px;
+
+        button {
+          display: inline-block;
+          width: 48px;
+          height: 45px;
+          padding: 0;
+          border: none;
+          border-radius: 8px;
+          outline: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          background: hsl(229, 57%, 11%);
+          transition: all 0.13s ease-in-out;
+          svg {
+            fill: #697ed4;
+            transition: all 0.13s ease-in-out;
+          }
+          &:hover {
+            background: hsl(229, 57%, 21%);
+            svg {
+              fill: #97a4d8;
+            }
+          }
+        }
+      }
+    }
+    .card2 {
+      position: relative;
+      height: 155px;
+      width: 540px;
+      border-radius: 10px;
+      padding: 40px;
+      background-color: hsl(228, 56%, 26%);
+      color: hsl(243, 100%, 93%);
+      label {
+        display: block;
+        font-weight: 300;
+        margin-bottom: 20px;
+        span {
+          font-weight: 600;
+        }
+      }
+      .progress {
+        width: 100%;
+        height: 20px;
+        margin-bottom: 10px;
+        background-color: hsl(229, 57%, 21%);
+        border-radius: 10px;
+        border: 3px solid hsl(229, 57%, 21%);
+        .progressBar {
+          position: relative;
+          width: 74%;
+          height: 100%;
+          border-radius: 10px;
+          background: linear-gradient(
+            to right,
+            hsl(6, 100%, 80%),
+            hsl(335, 100%, 65%)
+          );
+          &__ball {
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: white;
+          }
+        }
+      }
+      .progressNumbers {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .gbLeftModul {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 39px;
+        top: -38px;
+        width: 180px;
+        height: 70px;
+        border-radius: 10px;
+        background-color: white;
+        .triangle {
+          position: absolute;
+          right: 0px;
+          bottom: -20px;
+          width: 1px;
+          height: 1px;
+          border: 20px solid transparent;
+          border-right: 20px solid white;
+        }
+        p:nth-child(1) {
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 38px;
+          font-weight: 700;
+          text-align: center;
+          color: hsl(229, 57%, 11%);
+        }
+        p:nth-child(2) {
+          display: inline-block;
+          padding-top: 3px;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: hsl(229, 7%, 55%);
+        }
+      }
+    }
+  }
 }
+
+@import "mediaQs.scss";
