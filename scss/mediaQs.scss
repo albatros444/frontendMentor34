@@ -1,6 +1,7 @@
 @media screen and (max-width: 950px) {
   .background {
     padding: 25px;
+    padding-bottom: 60px;
     background-image: url(/images/bg-mobile.png);
     background-size: 100% 100%;
     .boxForCards {
@@ -14,10 +15,14 @@
       .card2 {
         width: 100%;
         max-width: 500px;
-
+        padding: 32px 32px;
+        height: 160px;
+        label {
+          padding-left: 18px;
+        }
         .gbLeftModul {
-          right: 20%;
-          top: 120px;
+          right: -15%;
+          top: 59px;
           .triangle {
             display: none;
           }
